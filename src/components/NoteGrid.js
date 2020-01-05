@@ -14,9 +14,7 @@ class NoteGrid extends Component {
 
 
     handleEdit = (e) => {
-        this.setState({
-            edit: true
-        })
+        this.setState({edit: true})
     }
 
     handleRemove = () => {
@@ -31,30 +29,32 @@ class NoteGrid extends Component {
     }
     renderNormal = () => {
         return (
-            <div className='noteRender'>
-                <div className="dash"></div>
+            <div className='noteRender test test2'>
                 <p> {this.props.text} </p>
-                <button onClick={this.handleEdit} type="button" className="addBtn2">
-                    <span class="glyphicon glyphicon-pencil edit " aria-hidden="true"></span>
+                <div className="row">
+                    <div className="col-md-6">
+                    <button onClick={this.handleEdit} type="button" className="addBtn2">
+                    <span class="glyphicon glyphicon-pencil edit text-right " aria-hidden="true"></span>
                 </button>
-                <button onClick={this.handleRemove} type="button" className="addBtn2">
-                    <span class="glyphicon glyphicon-remove remove " aria-hidden="true"></span>
+                    </div>
+                    <div className="col-md-6">
+                    <button onClick={this.handleRemove} type="button" className="addBtn2">
+                    <span class="glyphicon glyphicon-remove remove text-left" aria-hidden="true"></span>
                 </button>
-                <div className="dash"></div>
+                    </div>
+                </div>
             </div>
         )
     }
     renderForm = () => {
         return (
-            <div className='noteRender'>
-                <div className="dash"></div>
+            <div className='noteRender test '>
                 <form>
                     <textarea ref='newText' defaultValue={this.props.text} className='formCustom' rows='4'></textarea>
                     <button onClick={this.handleSave} type="button" className="addBtn2">
-                    <span class="glyphicon glyphicon-ok ok " aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon-ok ok " aria-hidden="true"></span>
                     </button>
                 </form>
-                <div className="dash"></div>
             </div>
         )
 
