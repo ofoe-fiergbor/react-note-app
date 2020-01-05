@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 
 
 
-
 class NoteGrid extends Component {
     constructor(props) {
         super(props)
@@ -11,6 +10,7 @@ class NoteGrid extends Component {
             edit: false,
         }
     }
+
 
 
     handleEdit = (e) => {
