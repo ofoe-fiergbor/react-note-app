@@ -40,11 +40,11 @@ class Wall extends Component {
                 <h1 className='navbar text-center'>Note App</h1>
                 <div className='row'>
                     <div className="col-md-4 col-sm-3 col-xs-1"></div>
-                    <div className="col-md-4 col-sm-6 col-xs-10 test">
+                    <div className="col-md-4 col-sm-6 col-xs-10 ">
                         <div className="row">
-                            <div className="col-md-10"><h3>Add New Note</h3></div>
+                            <div className="col-md-10 text-center"><h3>Add New Note</h3></div>
                             <div className="col-md-2">
-                                <button className='addBtn' onClick={this.add.bind(null, 'Click Edit to add Note')}>
+                                <button className='addBtn' onClick={this.add.bind(null, "Click The Pencil")}>
                                     <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
                                 </button>
                             </div>
